@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "bbe13bc2-9063-4954-8c24-e5f99e06a2c5",
+		"name": "Trello testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25729717"
+	},
+	"item": [
+		{
+			"name": "Creating a New Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=New Board Created on Postman&key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "New Board Created on Postman"
+						},
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating a List on a Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63f650b1f3ce668a4772b452/lists?name=New List created on Postman&key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63f650b1f3ce668a4772b452",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "New List created on Postman"
+						},
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating a Card on a List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=63f651c86458421ddc9bfaaf&key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686&name=New Card created on Postman",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "63f651c86458421ddc9bfaaf"
+						},
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						},
+						{
+							"key": "name",
+							"value": "New Card created on Postman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating a Description of a Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/63f6548deec28149a50e59ff?key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686&desc=New description created on Postman",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"63f6548deec28149a50e59ff"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						},
+						{
+							"key": "desc",
+							"value": "New description created on Postman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inviting a member to work on a Board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63f650b1f3ce668a4772b452/members?email=w.kaminska@studenti.uniss.it&key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63f650b1f3ce668a4772b452",
+						"members"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "w.kaminska@studenti.uniss.it"
+						},
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moving a Card to different List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/63f6548deec28149a50e59ff?key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686&idList=63f650b1f3ce668a4772b459",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"63f6548deec28149a50e59ff"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						},
+						{
+							"key": "idList",
+							"value": "63f650b1f3ce668a4772b459"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finding id of the List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63f650b1f3ce668a4772b452/lists?key=09e13c76ca447bfe997c32f62815feb9&token=ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63f650b1f3ce668a4772b452",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "09e13c76ca447bfe997c32f62815feb9"
+						},
+						{
+							"key": "token",
+							"value": "ATTA6fd3041684d370930274f1f4d5258c99f17a95f1c981256027f0be7fb8dbd89141EE4686"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
